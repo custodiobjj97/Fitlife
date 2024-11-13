@@ -1,0 +1,10 @@
+.classes{
+    padding: 120px 12px;
+    background-color: var(--color-dark-blue);
+    overflow: hidden;
+   
+}  
+.classes h2{
+    color: #fff;
+    
+}

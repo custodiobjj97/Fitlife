@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Rubik", serif;
+}
+
+:root{
+/*color*/
+--color-primary:hsl(12 98% 52%);
+--color-secundary:hsl(220 15% 62%);
+--color-dark-blue:hsl(210 25% 11%);
+--color-orange-light:hsl(12 98% 52% / 0.1);
+
+/*margin*/
+--mg-bottom:1.5rem;
+--mg-bottom-small:1.2rem;
+
+}
+
+.title-1{
+    font-size: 2.66rem;
+    font-family: "Catamaran", sans-serif;
+}
+
+.title-2{
+    font-size: 2.66rem;
+    font-family: "Catamaran", sans-serif;
+}
+
+.container{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0px auto;
+    
+}
+.btn{
+  padding: 0.87rem 4rem;
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: 0.75rem;
+  transition: .4s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 3rem;
+}
+
+.grid-3{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    gap: 3rem;
+}
+
+
+.scroll{
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: .6s ease-in-out;
+}
+
+.scroll.active{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.subtitle{
+    padding: 0.90rem 3rem;
+    border-radius: 7px;
+    background-color: var(--color-orange-light);
+    color: var(--color-primary);
+    margin-bottom: var(--mg-bottom);
+    text-transform: uppercase;
+}
+
+.link-social{
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+a,
+span{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+
+
+
+@media (min-width:1042px){
+    .title-1{
+        font-size: 4rem;
+    }
+
+    .title-2{
+        font-size: 3rem;
+    }
+
+    .grid{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .grid-3{
+        grid-template-columns: repeat(3,1fr);
+    }
+}

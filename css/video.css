@@ -1,0 +1,38 @@
+.banner-video{
+    padding: 220px 12px;
+}
+
+
+
+.video-box{
+   max-width: 950px;
+   margin: 0px auto;
+   position: relative;
+}
+
+.video-box > img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.video-box::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 1px;
+    color: #fb5;
+    background-color: #0000003f;
+    display: block;
+}
+
+
+.icon-video{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    font-size: 3rem;
+    color: var(--color-primary);
+    cursor: pointer;
+    z-index: 111;
+}

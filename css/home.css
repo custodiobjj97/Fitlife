@@ -1,0 +1,66 @@
+.home{
+    padding: 220px 12px;
+    background: url('../images/hero-bg.png') no-repeat left center;
+    background-size: cover;
+    background-color: var(--color-dark-blue);
+    background-blend-mode: lighten;
+}
+
+.home-text{
+    color: #fff;
+}
+
+.home-text P{
+    margin-bottom: var(--mg-bottom);
+}
+
+.home-image{
+    background: url('../images/hero-circle-one.png') repeat center, url('../images/hero-circle-two.png') repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.icon-home-right{
+    position: absolute;
+    right: 0.20rem;
+    top: 57%;
+}
+
+.icon-home-left{
+    position: absolute;
+    left: 0.20rem;
+    top: 82%;
+    animation-direction: alternate-reverse;
+}
+
+.icon-home{
+    animation: moveIn infinite  3s alternate;
+}
+
+@keyframes moveIn{
+    0%{
+        transform: translate(0,0);
+    }
+
+    50%{
+        transform: translate(-5px, 10px);
+    }
+
+    100%{
+        transform: translate(5px, 20px);
+    }
+}
+
+
+
+
+@media (min-width:1042px){
+    .icon-home-right{
+        top: 50%;
+    }
+    .icon-home-left{
+        position: absolute;
+        left: 0.20rem;
+        top: 40%;
+    }
+}

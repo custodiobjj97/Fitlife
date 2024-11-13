@@ -1,0 +1,47 @@
+.wrapper{
+    overflow: hidden;
+}
+
+.slide{
+    display: flex;
+}
+
+.slide li {
+    flex-shrink: 0;
+    max-width: 900px;
+    width: 80vw;
+    opacity: 0.5;
+    transform: scale(0.5);
+    transition: .4s ease-in-out;
+    user-select: none;
+}
+
+.slide li.active{
+    opacity: 1;
+    transform: scale(1);
+} 
+.custom-control{
+    margin: 1.5rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.custom-control li{
+    background-color: var(--color-primary);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    opacity: 0.6;
+    transform: scale(0.6);
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+
+.custom-control li.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+

@@ -1,0 +1,62 @@
+.about{
+    padding: 220px 12px;
+}
+
+
+.about-text > p{
+  max-width: 30ch;
+}
+
+.about-text h2,p{
+    margin-bottom: var(--mg-bottom);
+}
+
+.about-text h3{
+    margin-bottom: var(--mg-bottom-small);
+}
+
+.icon-about{
+    display: flex;
+    align-items: self-start;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.icon-about > img{
+    border-radius: 50%;
+}
+
+.about-image{
+    max-width: 570px;
+    background: url('../images/about-circle-one.png') no-repeat center, url('../images/about-circle-two.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.about-image::before{
+    content: '';
+    width: 100%;
+    border-radius: 7px;
+    background:url('../images/fitness.png') no-repeat center;
+    background-size: contain;
+    background-color: var(--color-primary);
+    background-blend-mode: lighten;
+    min-height: 250px;
+    display: block;
+    position: absolute;
+    top: 60%;
+    z-index: -111;
+}
+
+
+
+@media (min-width:1042px) {
+    .about-text > p{
+        max-width: 60ch;
+    }
+
+    .icon-about{
+        flex-direction: row;
+        align-items: center;
+    }
+}
